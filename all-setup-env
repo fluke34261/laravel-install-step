@@ -1,10 +1,6 @@
 #!/bin/sh
 
-var=(php7.4-{curl,xml,fpm,bcmath,bz2,intl,gd,mbstring,mysql,zip,common}) 
-
-sudo apt install -y php7.4
-sudo apt install -y "${var[@]}"
-
+sudo apt install -y php7.4 php7.4-curl php7.4-xml php7.4-bcmath php7.4-bz2 php7.4-intl php7.4-gd php7.4-mbstring php7.4-mysql php7.4-zip php7.4-common
 sudo apt install -y nginx
 
 cd ~

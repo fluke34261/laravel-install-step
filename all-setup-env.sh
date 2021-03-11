@@ -21,7 +21,8 @@ sudo chown -Rv $USER:$USER /var/www/html
 sudo chmod -Rv g+rw /var/www/html
 
 # create project
-if [[ "$1" = "lumen" ]] ; then
+if [[ "$1" = "lumen" ]]
+then
     composer create-project laravel/lumen /var/www/html/app
     echo "create lumen"
 else

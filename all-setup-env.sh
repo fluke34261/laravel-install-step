@@ -23,8 +23,10 @@ sudo chmod -Rv g+rw /var/www/html
 # create project
 if [[ "$1" = "lumen" ]] ; then
     composer create-project laravel/lumen /var/www/html/app
+    echo "create lumen"
 else
     composer create-project laravel/laravel /var/www/html/app
+    echo "create laravel"
 fi
 
 ls -al /var/www/html/app

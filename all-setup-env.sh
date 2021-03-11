@@ -17,10 +17,14 @@ composer
 
 # set permission
 # https://stackoverflow.com/questions/30266250/how-to-fix-error-mkdir-permission-denied-when-running-composer
-sudo chown -Rv root:$USER /var/www/html
+sudo chown -Rv $USER:$USER /var/www/html
 sudo chmod -Rv g+rw /var/www/html
 
 # create project
-# https://laravel.com/docs/master/installation
-composer create-project laravel/laravel /var/www/html/app
+if [[ "$1" = "lumen" ]] ; then
+    composer create-project laravel/lumen /var/www/html/app
+else
+    composer create-project laravel/laravel /var/www/html/app
+fi
+
 ls -al /var/www/html/app

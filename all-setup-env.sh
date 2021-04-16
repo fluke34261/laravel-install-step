@@ -3,7 +3,7 @@
 sudo apt update
 
 # install php and php-extension
-sudo apt install -y php7.4 php7.4-curl php7.4-xml php7.4-bcmath php7.4-bz2 php7.4-intl php7.4-gd php7.4-mbstring php7.4-mysql php7.4-zip php7.4-common
+sudo apt install -y php7.4 php7.4-fpm php7.4-curl php7.4-xml php7.4-bcmath php7.4-bz2 php7.4-intl php7.4-gd php7.4-mbstring php7.4-mysql php7.4-zip php7.4-common
 
 # install nginx web server
 sudo apt install -y nginx

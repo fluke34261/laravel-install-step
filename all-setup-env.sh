@@ -8,6 +8,10 @@ sudo apt install -y php7.4 php7.4-curl php7.4-xml php7.4-bcmath php7.4-bz2 php7.
 # install nginx web server
 sudo apt install -y nginx
 
+# set default nginx
+sudo rm /etc/nginx/sites-available/default
+curl https://raw.githubusercontent.com/fluke34261/laravel-install-step/main/default -o /etc/nginx/sites-available/default
+
 # install composer
 cd ~
 curl -sS https://getcomposer.org/installer -o composer-setup.php

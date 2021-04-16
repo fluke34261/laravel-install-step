@@ -12,6 +12,9 @@ sudo apt install -y nginx
 sudo rm /etc/nginx/sites-available/default
 curl https://raw.githubusercontent.com/fluke34261/laravel-install-step/main/default -o /etc/nginx/sites-available/default
 
+sudo service apache2 stop
+sudo /etc/init.d/nginx restart
+
 # install composer
 cd ~
 curl -sS https://getcomposer.org/installer -o composer-setup.php

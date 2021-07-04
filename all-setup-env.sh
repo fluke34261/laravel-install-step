@@ -10,14 +10,14 @@ sudo apt install -y nginx
 
 # set default nginx
 sudo rm /etc/nginx/sites-available/default
-curl https://raw.githubusercontent.com/fluke34261/laravel-install-step/main/default -o /etc/nginx/sites-available/default
+sudo curl https://raw.githubusercontent.com/fluke34261/laravel-install-step/main/default -o /etc/nginx/sites-available/default
 
 sudo service apache2 stop
 sudo /etc/init.d/nginx restart
 
 # install composer
 cd ~
-curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
 HASH=`curl -sS https://composer.github.io/installer.sig`
 echo $HASH
 php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"

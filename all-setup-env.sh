@@ -3,7 +3,15 @@
 sudo apt update
 
 # install php and php-extension
-sudo apt install -y php7.4 php7.4-fpm php7.4-curl php7.4-xml php7.4-bcmath php7.4-bz2 php7.4-intl php7.4-gd php7.4-mbstring php7.4-mysql php7.4-zip php7.4-common
+
+#version 7 default
+#sudo apt install -y php7.4 php7.4-fpm php7.4-curl php7.4-xml php7.4-bcmath php7.4-bz2 php7.4-intl php7.4-gd php7.4-mbstring php7.4-mysql php7.4-zip php7.4-common
+
+#version 8
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install -y php8.1 php8.1-fpm php8.1-curl php8.1-xml php8.1-bcmath php8.1-bz2 php8.1-intl php8.1-gd php8.1-mbstring php8.1-mysql php8.1-zip php8.1-common
 
 # install nginx web server
 sudo apt install -y nginx

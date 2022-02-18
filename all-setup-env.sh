@@ -9,8 +9,9 @@ sudo apt update
 
 #version 8
 sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
-sudo apt update
+sudo add-apt-repository ppa:ondrej/php -y
+#sudo add-apt-repository ppa:ondrej/nginx-mainline
+sudo apt update --fix-missing
 sudo apt install -y php8.1 php8.1-fpm php8.1-curl php8.1-xml php8.1-bcmath php8.1-bz2 php8.1-intl php8.1-gd php8.1-mbstring php8.1-mysql php8.1-zip php8.1-common
 
 # install nginx web server

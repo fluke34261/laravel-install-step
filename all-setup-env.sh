@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt update
+sudo apt update --fix-missing
 
 # install php and php-extension
 
